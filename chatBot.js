@@ -28,25 +28,24 @@ function getTime() {
     return time;
 }
 
-// [{ response: ['Paczkomat', 'Kurier'], keyword: 'zwrot' }]
-
 function getBotResponse(input) {
-    if (input === 'zwrot') {
-        return ['Paczkomat', 'Kurier'];
-    } else if (input === 'Kurier') {
-        return 'Informacje o zwrotach przez kuriera są dostępne na: dpd.pl';
-    } else if (input === 'Paczkomat') {
-        return 'Paczkomaty inpost dostępne na: inpost.pl';
-    } else if (input.includes('reklamacja') || input.includes('produkt')) {
-        return ['Nowe', 'Uzywane'];
-    } else if (input === 'Nowe') {
-        return 'Produkty reklamowane mogą byc tylko nowe';
-    } else if (input === 'Uzywane') {
-        return 'Produktow uzywanych nie reklamujemy';
-    } else if (input === 'Reklamacja produktu') {
-        return 'Zapoznaj sie z naszą polityką reklamacji';
-    } else {
-        return 'Nie rozumiem, sprecyzuj pytanie nt. zwrotow i reklamacji 😇';
+    switch (true) {
+        case input === 'hej':
+            return "W czym mogę pomóc?"
+        case input === 'zwrot':
+            return ['Paczkomat', 'Kurier'];
+        case input === 'kurier':
+            return 'Informacje o zwrotach przez kuriera są dostępne na: dpd.pl';
+        case input.includes('reklamacja') || input.includes('produkt'):
+            return ['Nowe', 'Uzywane'];
+        case input === 'Nowe':
+            return 'Produkty reklamowane mogą byc tylko nowe';
+        case input === 'Uzywane':
+            return 'Produktow uzywanych nie reklamujemy';
+        case input === 'Reklamacja produktu':
+            return 'Zapoznaj sie z naszą polityką reklamacji';
+        default:
+            return 'Nie rozumiem, sprecyzuj pytanie nt. zwrotow i reklamacji 😇';
     }
 }
 
