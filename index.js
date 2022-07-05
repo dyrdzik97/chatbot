@@ -34,7 +34,7 @@ function getBotResponse(input) {
             return "W czym mogę pomóc?"
         case input === 'zwrot':
             return ['Paczkomat', 'Kurier'];
-        case input === 'kurier':
+        case input === 'kurier' || input.includes('Kurier'):
             return 'Informacje o zwrotach przez kuriera są dostępne na: dpd.pl';
         case input.includes('reklamacja') || input.includes('produkt'):
             return ['Nowe', 'Uzywane'];
