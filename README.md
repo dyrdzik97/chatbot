@@ -1,4 +1,4 @@
-# Chatbot in. HTML & JS & CSS
+# Interactive Chatbot
 
 
 This is a prototype of interactive chatbot which contains dialogs about packages returns.
