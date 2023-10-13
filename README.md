@@ -5,7 +5,7 @@ This is a prototype of interactive chatbot which contains dialogs about packages
 
 All data mocked (for future improvements).
 
-If you wanna test my chatbot - let's go together through the this process 😊
+If you wanna test my chatbot - let's go together through this process 😊
 
 Here you can find the most popular phrases that my chatbot will answer you:
 
